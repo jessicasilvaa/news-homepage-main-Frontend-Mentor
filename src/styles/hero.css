@@ -1,0 +1,56 @@
+.hero {
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--Dark-grayish-blu);
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--Dark-grayish-blu);
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.read-btn {
+    background-color: var(--Soft-red);
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: none;
+    padding: 1rem;
+    width: 200px;
+    margin-top: 1.5rem;
+}
+
+.read-btn:hover {
+    background-color: var(--Very-dark-blue);
+    transition: .3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    
+    .hero-content {
+        display: flex;
+
+        .right {
+            width: 100%;
+        }
+
+        .left {
+            margin-right: 5rem;
+        }
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}

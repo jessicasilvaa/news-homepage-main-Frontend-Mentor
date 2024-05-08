@@ -1,0 +1,56 @@
+.card-container {
+    margin-top: 5rem; 
+    padding-bottom: 5rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card img {
+    max-width: 100px;
+}
+
+.num {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card-title:hover {
+    color: var(--Soft-orange);
+    transition: .3s ease-out;
+}
+
+.card-text {
+    margin-top: .8rem;
+    line-height: 1.5;
+    color: var(--Dark-grayish-blue);
+}
+
+@media (min-width: 769px) {
+    .card-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: .9rem;
+    }
+
+}

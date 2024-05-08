@@ -1,0 +1,10 @@
+@media (min-width: 769px) {
+  .app {
+    padding: 3rem 5rem;
+  }
+
+  .hero-container {
+    display: flex;
+    gap: 2rem;
+  }
+}
