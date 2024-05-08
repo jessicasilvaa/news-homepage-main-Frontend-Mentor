@@ -1,22 +1,25 @@
 import "../styles/card.css";
+import imgRetro from "../assets/images/image-retro-pcs.jpg";
+import imgTop from "../assets/images/image-top-laptops.jpg";
+import imgGaming from "../assets/images/image-gaming-growth.jpg";
 
 let dataCard = [
   {
-    src: "src/assets/images/image-retro-pcs.jpg",
+    img: imgRetro,
     alt: "retro pcs",
     num: "01",
     cardTitle: "Reviving Retro PCs",
     cardText: "What happens when old PCs are given modern upgrades?",
   },
   {
-    src: "src/assets/images/image-top-laptops.jpg",
+    img: imgTop,
     alt: "top laptops",
     num: "02",
     cardTitle: "Top 10 Laptops of 2022",
     cardText: "Our best picks for various needs and budgets.",
   },
   {
-    src: "src/assets/images/image-gaming-growth.jpg",
+    img: imgGaming,
     alt: "gaming growth",
     num: "03",
     cardTitle: "The Growth of Gaming",
@@ -29,7 +32,7 @@ export default function Card() {
     <section className="card-container">
       {dataCard.map((item) => (
         <div className="card" key={item.num}>
-          <img src={item.src} alt={item.alt} />
+          <img src={item.img} alt={item.alt} />
           <div className="card-content">
             <span className="num">{item.num}</span>
             <h3 className="card-title">{item.cardTitle}</h3>

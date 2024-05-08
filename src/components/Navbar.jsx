@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "../styles/navbar.css";
+import logo from "../assets/images/logo.svg"
+import menuIcon from "../assets/images/icon-menu.svg"
+import closeMenuIcon from "../assets/images/icon-menu-close.svg"
 
 let menu = [
   {
@@ -37,16 +40,16 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="src/assets/images/logo.svg" alt="News logo" className="logo" />
+      <img src={logo} alt="News logo" className="logo" />
       {!menuOpen && (
         <button className="menu-btn" onClick={menuBtn}>
-          <img src="src/assets/images/icon-menu.svg" alt="menu" />
+          <img src={menuIcon} alt="menu" />
         </button>
       )}
       {menuOpen && (
         <div className="list-container">
           <button className="close-menu" onClick={closeMenu}>
-            <img src="src/assets/images/icon-menu-close.svg" alt="close menu" />
+            <img src={closeMenuIcon} alt="close menu" />
           </button>
           <div className="overflow"></div>
 
